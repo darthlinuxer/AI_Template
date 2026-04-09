@@ -2,7 +2,7 @@
 name: "Pirate Minion"
 description: "Use when needed to explore a place the navigator found an look for treasuries there"
 tools: ['treasure-finder/*']
-model: "GPT-5.4 (copilot)"
+model: "GPT-5 mini (copilot)"
 user-invocable: false
 ---
 
