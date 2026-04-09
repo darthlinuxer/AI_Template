@@ -1,0 +1,14 @@
+{
+	"servers": {
+		"treasure-finder": {
+			"type": "stdio",
+			"command": "dotnet",
+			"args": [
+				"run",
+				"tools\\treasure-finder\\server.cs",
+				"--no-build"
+			]
+		}
+	},
+	"inputs": []
+}
