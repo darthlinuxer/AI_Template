@@ -2,7 +2,7 @@
 name: "Navigator"
 description: "Pirate navigator mate. Use when: deciding where to navigate to."
 tools: []
-model: "GPT-5 mini (copilot)"
+model: "GPT-5.4 (copilot)"
 user-invocable: false
 ---
 

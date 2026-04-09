@@ -1,0 +1,74 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ],
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ],
+    "PreCompact": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ],
+    "SubagentStart": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ],
+    "SubagentStop": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ],
+    "SessionEnd": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ],
+    "ErrorOccurred": [
+      {
+        "type": "command",
+        "command": "dotnet run ./tools/console.cs --no-build --no-restore",
+        "timeout": 5
+      }
+    ]
+  }
+}

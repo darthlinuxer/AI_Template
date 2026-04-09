@@ -17,13 +17,13 @@ await app.RunAsync();
 [McpServerToolType]
 public static class FindTreasureTool
 {
-    [McpServerTool, Description("Finds a treasure.")]
+    [McpServerTool, Description("Finds a treasure given a location")]
     public static string FindTreasureInLocation(string location)
     {
         var random = new Random();
-        if (random.Next(1, 101) <= 50)
+        if (random.Next(1, 101) >= 50)
             return $"You found a treasure at {location}!";
         else
-            return $"No treasure found at {location}. Keep searching!";
+            return $"No treasure found at {location}. Better luck next time!";
     }
 }
