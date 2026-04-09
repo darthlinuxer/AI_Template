@@ -1,0 +1,60 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "dotnet run --project tools/hooks/HookRunner/HookRunner.csproj --no-build --no-restore -- SessionStart",
+        "timeout": 5
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "dotnet run --project tools/hooks/HookRunner/HookRunner.csproj --no-build --no-restore -- UserPromptSubmit",
+        "timeout": 5
+      }
+    ],
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "dotnet run --project tools/hooks/HookRunner/HookRunner.csproj --no-build --no-restore -- PreToolUse",
+        "timeout": 5
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "dotnet run --project tools/hooks/HookRunner/HookRunner.csproj --no-build --no-restore -- PostToolUse",
+        "timeout": 5
+      }
+    ],
+    "PreCompact": [
+      {
+        "type": "command",
+        "command": "dotnet run --project tools/hooks/HookRunner/HookRunner.csproj --no-build --no-restore -- PreCompact",
+        "timeout": 5
+      }
+    ],
+    "SubagentStart": [
+      {
+        "type": "command",
+        "command": "dotnet run --project tools/hooks/HookRunner/HookRunner.csproj --no-build --no-restore -- SubagentStart",
+        "timeout": 5
+      }
+    ],
+    "SubagentStop": [
+      {
+        "type": "command",
+        "command": "dotnet run --project tools/hooks/HookRunner/HookRunner.csproj --no-build --no-restore -- SubagentStop",
+        "timeout": 5
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "dotnet run --project tools/hooks/HookRunner/HookRunner.csproj --no-build --no-restore -- Stop",
+        "timeout": 5
+      }
+    ]
+  }
+}
